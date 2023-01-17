@@ -1,0 +1,110 @@
+@import "../../utils/variables";
+
+.students-review {
+  width: 100%;
+  padding: 150px 0 200px;
+
+  &--title {
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      h3 {
+        margin: 0;
+      }
+
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &--list {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-item {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      &-description {
+        p {
+          font-weight: 300;
+          text-align: center;
+          line-height: 1.75rem;
+        }
+      }
+
+      &-name {
+        display: flex;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        svg {
+          width: 1rem;
+          margin: 0 10px;
+
+          path {
+            fill: $highlight-color-300;
+          }
+        }
+      }
+
+      &-age {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &--video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+
+    &-lines {
+      position: absolute;
+      left: 0;
+      z-index: -1;
+
+      svg {
+        path {
+          stroke: $highlight-color-300;
+        }
+
+        &:first-child {
+          stroke-width: 0.5;
+        }
+
+        &:last-child {
+          stroke-width: 2;
+          transform: translateY(-120px);
+        }
+      }
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      svg {
+        margin-top: 20px;
+      }
+    }
+  }
+}

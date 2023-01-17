@@ -1,0 +1,66 @@
+@import "../../utils/variables";
+
+.header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &-logo,
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 75px;
+      height: 75px;
+      cursor: pointer;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  }
+
+  &-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+
+    a {
+      text-transform: uppercase;
+    }
+
+    a:after {
+      display: block;
+      content: "";
+      border-bottom: 1px solid $secondary-color;
+      transform: scaleX(0);
+      transition: transform 250ms ease-in-out;
+    }
+
+    a:hover:after {
+      transform: scaleX(1);
+    }
+
+    a:after {
+      transform-origin: center left;
+    }
+
+    .active:after {
+      border-bottom: 1px solid $secondary-color;
+      transform: scaleX(1);
+    }
+  }
+}

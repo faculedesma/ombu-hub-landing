@@ -1,0 +1,110 @@
+@import "../../utils/variables";
+
+.footer {
+  color: $primary-color;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 80px 0;
+
+  &-left {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    z-index: 2;
+
+    &--location {
+      img {
+        width: 400;
+        height: auto;
+      }
+
+      p {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+    }
+
+    &--social {
+      &-networks {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        svg {
+          cursor: pointer;
+          width: 1rem;
+          height: auto;
+          margin-right: 10px;
+
+          &:hover {
+            path {
+              fill: $highlight-color-300;
+            }
+          }
+        }
+      }
+    }
+
+    &--copyright {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      margin-top: 20px;
+
+      p {
+        font-weight: 300;
+        margin-bottom: 0;
+      }
+
+      p:first-child {
+        text-transform: uppercase;
+      }
+
+      p:last-child {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &-center {
+    z-index: 2;
+    ul {
+      padding: 0;
+      list-style: none;
+
+      li {
+        font-size: 0.75rem;
+        font-weight: 300;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &-right {
+    z-index: 2;
+    &--form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      button,
+      path {
+        color: $primary-color;
+        fill: $primary-color;
+      }
+    }
+  }
+
+  &-bg {
+    height: 660px;
+    background-color: $secondary-color;
+    z-index: 1;
+  }
+}

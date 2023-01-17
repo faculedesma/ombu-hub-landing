@@ -1,0 +1,52 @@
+@import "../../utils/variables";
+
+.separator {
+  &-one {
+    .separator-arduino,
+    .separator-lines {
+      position: absolute;
+    }
+
+    .separator-arduino {
+      right: 0;
+      transform: translateY(40px);
+    }
+
+    .separator-lines {
+      left: 0;
+
+      svg {
+        &:first-child {
+          stroke-width: 1;
+          transform: translateY(80px);
+        }
+
+        &:last-child {
+          stroke-width: 2;
+          transform: translateY(-30px);
+        }
+      }
+    }
+  }
+
+  &-two {
+    position: absolute;
+    left: 0;
+
+    svg {
+      &:nth-child(even) {
+        stroke-width: 3;
+      }
+
+      &:nth-child(odd) {
+        stroke-width: 1;
+      }
+    }
+  }
+
+  &-three {
+    position: absolute;
+    left: 0;
+    transform: translateY(-140px);
+  }
+}

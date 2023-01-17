@@ -1,0 +1,11 @@
+@import "../../utils/variables.scss";
+
+.app {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  max-width: $max-container-width;
+  margin: 0 auto;
+}

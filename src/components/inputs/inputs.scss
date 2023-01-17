@@ -1,0 +1,25 @@
+@import "../../utils/variables";
+.input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid $primary-color;
+  transition: all ease-in-out 150ms;
+  border-radius: 4px;
+  background-color: transparent;
+  margin: 10px 0;
+  padding-left: 10px;
+  color: $primary-color;
+
+  &:hover {
+    border: 1px solid $highlight-color-300;
+    transition: all ease-in-out 150ms;
+  }
+
+  &-small {
+  }
+
+  &-large {
+    height: 135px;
+    padding-top: 20px;
+  }
+}

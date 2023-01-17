@@ -1,0 +1,40 @@
+@import "./utils//variables";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: $primary-font-family;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  color: $secondary-color;
+  background-color: $primary-color;
+}
+
+a {
+  font-size: 0.75rem;
+  color: $secondary-color;
+  text-decoration: inherit;
+}
+
+h1 {
+  font-size: 3.2em;
+  font-family: $secondary-font-family;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: $secondary-font-family;
+}
+
+button,
+input,
+textarea {
+  font-family: $primary-font-family;
+}

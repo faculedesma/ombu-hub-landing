@@ -1,0 +1,46 @@
+.home-courses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 330px;
+
+  &--title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+
+    svg {
+      margin: 0 20px;
+    }
+  }
+
+  &--subtitle {
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+
+  &--cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0;
+    list-style: none;
+    padding: 0;
+  }
+
+  &--more {
+    margin: 50px 0;
+    align-self: flex-end;
+  }
+}

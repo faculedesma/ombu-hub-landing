@@ -16,7 +16,7 @@ const Home = () => {
       <SeparatorOne />
       <HomeCourses />
       <SeparatorTwo />
-      {/* <WhoAreWe /> */}
+      <WhoAreWe />
       <StudentsReview />
       <SeparatorThree />
       <Footer />

@@ -1,0 +1,75 @@
+@import "../../utils/variables";
+
+.our-team {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &--title {
+    position: relative;
+
+    h2 {
+      font-size: 1.75rem;
+      letter-spacing: 0.1rem;
+      text-transform: uppercase;
+    }
+
+    svg {
+      position: absolute;
+      top: 75px;
+    }
+  }
+
+  &--list {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-mate {
+      width: 250px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      &-photo {
+        width: 100%;
+        height: 250px;
+        border-radius: 50%;
+        border: 2px solid $secondary-color;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      &-name {
+        p {
+          font-size: 1.25rem;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+      }
+
+      &-age {
+        p {
+          text-transform: uppercase;
+          font-weight: 300;
+        }
+      }
+
+      &-description {
+        width: 75%;
+
+        p {
+          font-weight: 300;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

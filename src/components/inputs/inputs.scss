@@ -13,9 +13,11 @@
   &:hover {
     border: 1px solid $highlight-color-300;
     transition: all ease-in-out 150ms;
-  }
 
-  &-small {
+    &::placeholder {
+      color: $highlight-color-300;
+      transition: all ease-in-out 150ms;
+    }
   }
 
   &-large {

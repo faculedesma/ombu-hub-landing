@@ -24,13 +24,17 @@ a {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 4em;
   font-family: $secondary-font-family;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h2 {
   font-family: $secondary-font-family;
+}
+
+button {
+  font-size: 0.75rem;
 }
 
 button,

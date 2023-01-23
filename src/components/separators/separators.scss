@@ -1,7 +1,11 @@
 @import "../../utils/variables";
 
 .separator {
+  z-index: -1;
   &-one {
+    position: relative;
+    transform: translateY(-120px);
+
     .separator-arduino,
     .separator-lines {
       position: absolute;
@@ -9,11 +13,12 @@
 
     .separator-arduino {
       right: 0;
-      transform: translateY(40px);
+      top: -30px;
     }
 
     .separator-lines {
       left: 0;
+      top: -10px;
 
       svg {
         &:first-child {

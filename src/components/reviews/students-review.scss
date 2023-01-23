@@ -2,7 +2,7 @@
 
 .students-review {
   width: 100%;
-  padding: 150px 0 200px;
+  padding: 130px 0 200px;
 
   &--title {
     position: absolute;
@@ -26,23 +26,33 @@
   }
 
   &--list {
-    padding-top: 100px;
+    padding-top: 130px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
     &-item {
+      position: relative;
       width: 300px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
 
+      &-quote {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(30px, -30px);
+        opacity: 0.1;
+      }
+
       &-description {
         p {
           font-weight: 300;
           text-align: center;
           line-height: 1.75rem;
+          font-style: italic;
         }
       }
 
@@ -75,6 +85,10 @@
     align-items: center;
     justify-content: center;
     margin-top: 100px;
+
+    img {
+      cursor: pointer;
+    }
 
     &-lines {
       position: absolute;
